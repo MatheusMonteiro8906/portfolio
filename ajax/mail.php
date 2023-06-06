@@ -6,19 +6,19 @@ $phone = $form['phone'];
 $sjubject = $form['sjubject'];
 $message = $form['message'];
 
-define('TO_EMAIL', 'themewar@gmail.com');
+define('TO_EMAIL', 'monteiromatheus047@gmail.com');
 define('SUBJECT', $sjubject);
 define('FROM_EMAIL', $email);
 
-$MESSAGE = 'Hi Admin, <br/><br/>';
-$MESSAGE .= 'You got an user query from Bittanto. User details and Message are noted bellow: <br/><br/>';
-$MESSAGE .= 'Name : '.$full_name.'<br/>';
+$MESSAGE = 'Olá, <br/><br/>';
+$MESSAGE .= 'Você recebeu uma mensagem: <br/><br/>';
+$MESSAGE .= 'Nome : '.$full_name.'<br/>';
 $MESSAGE .= 'Email : '.$email.'<br/>';
 if(!empty($phone)):
-    $MESSAGE .= 'Phone : '.$phone.'<br/>';
+    $MESSAGE .= 'Celular : '.$phone.'<br/>';
 endif;
 
-$MESSAGE .= 'Message : <br/>'.$message.'<br/><br/>';
+$MESSAGE .= 'Mensagem : <br/>'.$message.'<br/><br/>';
 $MESSAGE .= 'Regards';
 
 $HEADERS = "MIME-Version: 1.0" . "\r\n";

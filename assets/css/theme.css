@@ -103,6 +103,12 @@ iframe {
         position: fixed;
     }
 }
+
+@media (max-width: 768px){
+    .profileSidebar{
+        display: none;
+    }
+}
 .psHeader{
     min-height: 130px;
     background: #292633;
