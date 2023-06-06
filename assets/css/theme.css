@@ -1,6 +1,6 @@
 iframe {
     width: 100%;
-    min-height: 600px;
+    min-height: 1000px;
     
 }
 
@@ -1297,10 +1297,6 @@ iframe {
     text-align: center;
     margin-bottom: 0;
 }
-
-/*--------------------------------------------------------
-/ 4. Blog Post
-/---------------------------------------------------------*/
 .blogItem{
     position: relative;
     margin-bottom: 30px;
@@ -1448,10 +1444,6 @@ iframe {
     position: relative;
     display: inline-block;
 }
-
-/*--------------------------------------------------------
-/ 5. Contact
-/---------------------------------------------------------*/
 .mapSection{
     position: relative;
     padding: 0;
@@ -1497,9 +1489,6 @@ textarea{
     margin: 4px 0 0;
 }
 
-/*--------------------------------------------------------
-/ 6. Single Post
-/---------------------------------------------------------*/
 .thumbSection{
     padding: 0;
 }
@@ -2075,4 +2064,8 @@ body.SideBarOpend{
 }
 #backtotop:hover{
     background: #7635f5;
+}
+
+.email{
+    word-wrap: break-word; word-break: break-all;
 }
