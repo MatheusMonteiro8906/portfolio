@@ -1,33 +1,7 @@
-/*
-== malihu jquery custom scrollbar plugin ==
-Plugin URI: http://manos.malihu.gr/jquery-custom-content-scroller
-*/
-
-
-
-/*
-CONTENTS: 
-	1. BASIC STYLE - Plugin's basic/essential CSS properties (normally, should not be edited). 
-	2. VERTICAL SCROLLBAR - Positioning and dimensions of vertical scrollbar. 
-	3. HORIZONTAL SCROLLBAR - Positioning and dimensions of horizontal scrollbar.
-	4. VERTICAL AND HORIZONTAL SCROLLBARS - Positioning and dimensions of 2-axis scrollbars. 
-	5. TRANSITIONS - CSS3 transitions for hover events, auto-expanded and auto-hidden scrollbars. 
-	6. SCROLLBAR COLORS, OPACITY AND BACKGROUNDS 
-		6.1 THEMES - Scrollbar colors, opacity, dimensions, backgrounds etc. via ready-to-use themes.
-*/
-
-
-
-/* 
-------------------------------------------------------------------------------------------------------------------------
-1. BASIC STYLE  
-------------------------------------------------------------------------------------------------------------------------
-*/
-
 	.mCustomScrollbar{ -ms-touch-action: pinch-zoom; touch-action: pinch-zoom; /* direct pointer events to js */ }
 	.mCustomScrollbar.mCS_no_scrollbar, .mCustomScrollbar.mCS_touch_action{ -ms-touch-action: auto; touch-action: auto; }
 	
-	.mCustomScrollBox{ /* contains plugin's markup */
+	.mCustomScrollBox{ 
 		position: relative;
 		overflow: hidden;
 		height: 100%;
@@ -36,20 +10,12 @@ CONTENTS:
 		direction: ltr;
 	}
 
-	.mCSB_container{ /* contains the original content */
+	.mCSB_container{
 		overflow: hidden;
 		width: auto;
 		height: auto;
 	}
 
-
-
-/* 
-------------------------------------------------------------------------------------------------------------------------
-2. VERTICAL SCROLLBAR 
-y-axis
-------------------------------------------------------------------------------------------------------------------------
-*/
 
 	.mCSB_inside > .mCSB_container{ margin-right: 30px; }
 
@@ -62,7 +28,7 @@ y-axis
 	
 	.mCS-dir-rtl > .mCSB_inside > .mCSB_container.mCS_no_scrollbar_y.mCS_y_hidden{ margin-left: 0; } /* RTL direction/left-side scrollbar */
 
-	.mCSB_scrollTools{ /* contains scrollbar markup (draggable element, dragger rail, buttons etc.) */
+	.mCSB_scrollTools{ 
 		position: absolute;
 		width: 16px;
 		height: auto;

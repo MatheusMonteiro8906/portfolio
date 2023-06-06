@@ -173,60 +173,7 @@ input:focus, button:focus, select:focus, textarea:focus, a:focus{
     padding: 30px 15px;
 }
 
-/*------------------------------------------------------------------------------
-/ 3. Preloader
-/------------------------------------------------------------------------------*/
-.preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: 999999;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background: #201E29;
-}
-.preloader .vs-btn.vs-style1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    border-radius: 0;
-    padding: 5px 20px;
-    font-size: 16px;
-    border: none;
-}
-.preloader .preloader-box {
-    position: relative;
-    padding-left: 5px;
-    display: flex;
-    justify-content: center;
-    perspective: 200px;
-    margin-top: 30px;
-}
-.preloader .letter {
-    animation: movement 600ms ease var(--animation) infinite alternate;
-    position: relative;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    float: left;
-    text-align: center;
-    font-size: 20px;
-    color: #fff;
-    background: #01d85f;
-    margin-right: -1px;
-}
-@media (max-width: 576px) {
-    .preloader .letter {
-        width: 30px;
-        height: 30px;
-        line-height: 30px;
-    }
-}
+
 .preloader .letter:nth-child(1) {
     --animation: 0ms;
 }
