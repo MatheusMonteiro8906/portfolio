@@ -19,7 +19,7 @@ if(!empty($phone)):
 endif;
 
 $MESSAGE .= 'Mensagem : <br/>'.$message.'<br/><br/>';
-$MESSAGE .= 'Regards';
+$MESSAGE .= 'Cumprimentos';
 
 $HEADERS = "MIME-Version: 1.0" . "\r\n";
 $HEADERS .= "Content-type:text/html;charset=UTF-8" . "\r\n";
