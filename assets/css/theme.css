@@ -3,7 +3,6 @@ iframe {
     min-height: 1000px;
     
 }
-
 .cs-preloader {
     position: fixed;
     z-index: 99999;
@@ -18,18 +17,12 @@ iframe {
     width: 100%;
   }
 
-  .cs-center {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  #turnOff{
+    opacity: 1;
+    transition: opacity 1s linear;
   }
-.cs-preloader_in {
+  
+  .cs-preloader_in {
     width: 120px;
     height: 120px;
     position: relative;
@@ -86,6 +79,27 @@ iframe {
               transform: rotate(360deg);
     }
   }
+  .cs-center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+            background-color: #1d1b24;
+  }
+  .cs-site_header_style1 .cs-nav + .cs-header_toolbox.cs-center {
+    margin-left: 35px;
+  }
+
+  .cs-dark .cs-white_bg,
+  .cs-dark .cs-nav .cs-nav_list ul {
+    background-color: #283645;
+  }
+  
 
 .col-lg-4.profileColumn {
     -ms-flex: 0 0 30%;

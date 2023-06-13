@@ -2,9 +2,7 @@
 
 	'use strict';
 
-	/**
-	 * StackFx: The parent class.
-	 */
+
 	function StackFx(el) {
 		this.DOM = {};
 		this.DOM.el = el;
@@ -22,9 +20,7 @@
 		anime.remove(this.DOM.title);
 	};
         
-        /************************************************************************
-	 * HamalFx.
-	 ************************************************************************/
+
 	function HamalFx(el) {
 		StackFx.call(this, el);
 		this._initEvents();
@@ -117,6 +113,15 @@
 	window.HamalFx = HamalFx;
         
 })(window);
+
+window.addEventListener('load', function() {
+	var element = document.getElementById('turnOff');
+	element.style.opacity = '0';
+	setTimeout(function() {
+	  element.style.display = 'none';
+	}, 1000);
+  });
+  
 
 (function () {
     [].slice.call(document.querySelectorAll('.folio_effect > .folio_item')).forEach(function (stackEl) {
